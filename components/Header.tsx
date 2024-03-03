@@ -11,9 +11,8 @@ export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
+    <header className="z-[99] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -400, x: "-50%", opacity: 5 }}
         animate={{ y: 0, x: "-50%", opacity: 5 }}
       ></motion.div>
@@ -29,9 +28,9 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-2 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex w-full items-center justify-center px-2 py-3 hover:text-gray-800 transition dark:text-gray-500 dark:hover:text-gray-300",
                   {
-                    "dark:text-yellow-200 text-yellow-950": activeSection === link.name,
+                    "dark:text-yellow-300 text-yellow-450": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -43,13 +42,8 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-yellow-200 rounded-full absolute inset-0 -z-10 dark:bg-yellow-700"
+                    className="bg-yellow-400 "
                     layoutId="activeSection"
-                    transition={{
-                      type: "spring",
-                      stiffness: 455,
-                      damping: 43,
-                    }}
                   ></motion.span>
                 )}
               </Link>
