@@ -6,15 +6,15 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "Skills",
+    name: "Habilidades",
     hash: "#skills",
   },
   {
-    name: "Projects",
+    name: "Projetos",
     hash: "#projects",
   },
   {
-    name: "Contact",
+    name: "Contato",
     hash: "#contact",
   },
 ] as const;

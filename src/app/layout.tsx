@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Header";
 import ActiveSectionContextProvider from "../contexts/active-section";
+import Header from "@/components/Header";
 
 const roboto = Roboto({
   weight: '400',
@@ -22,8 +22,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body
-        className={roboto.className}
+      <body className={`${roboto.className} bg-purple-base`}
       >
         <ActiveSectionContextProvider>
           <Header />
