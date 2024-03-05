@@ -2,12 +2,16 @@ import React from "react"
 
 export const links = [
   {
-    name: "Home",
+    name: "Inicio",
     hash: "#home",
   },
   {
     name: "Habilidades",
     hash: "#skills",
+  },
+  {
+    name: "Sobre",
+    hash: "#about",
   },
   {
     name: "Projetos",
