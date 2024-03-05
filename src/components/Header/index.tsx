@@ -15,7 +15,7 @@ export default function Header() {
     <Container>
       <header className="z-[999] relative py-20">
         <motion.div
-          className="fixed top-0 left-1/2 h-[4.5rem] border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[33rem] sm:rounded-2xl dark:bg-purple-950 dark:border-purple-600 dark:bg-opacity-35"
+          className="fixed top-0 left-1/2 h-[4.5rem] border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[33rem] sm:rounded-2xl dark:bg-yellow-950 dark:border-purple-600 dark:bg-opacity-35"
           initial={{ y: -100, x: "-50%", opacity: 0 }}
           animate={{ y: 0, x: "-50%", opacity: 1 }}
         ></motion.div>
@@ -31,7 +31,7 @@ export default function Header() {
               >
                 <Link
                   className={clsx(
-                    "flex w-full items-center justify-center px-2 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-yellow-500",
+                    "flex w-full items-center justify-center px-2 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-purple-500",
                     {
                       "dark:text-gray-200 text-gray-950": activeSection === link.name,
                     }
@@ -45,7 +45,7 @@ export default function Header() {
                   {link.name}
                   {link.name === activeSection && (
                     <motion.span
-                      className="bg-gray-600 rounded-2xl absolute inset-0 -z-10 dark:bg-yellow-300"
+                      className="bg-gray-600 rounded-2xl absolute inset-0 -z-10 dark:bg-purple-300"
                       layoutId="activeSection"
                       transition={{
                         type: "spring",

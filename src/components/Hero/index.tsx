@@ -29,14 +29,14 @@ export const Hero = () => {
           {socialListItems.map((social, index) => (
             <SocialIcon key={index} icon={social.icon} link={social.link} />
           ))}
-          <h1 className="my-6 font-bold text-5xl text-white">
+          <h1 className="my-6 font-bold text-5xl text-black">
             Olá, me chamo <br />
-            <span className="text-yellow-400">Kayo Ennrique </span>
+            <span className="text-purple-500">Kayo Ennrique </span>
             e sou dev!
           </h1>
-          <p className="text-white text-3xl mb-7">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
+          <p className="text-black text-3xl mb-7">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
         </div>
-        <Image className="mix-blend-hard-light" src="/banner__image.png" alt="Imagem do desenvolvedor" width={285} height={41.5} />
+        <Image className="mix-blend-hard" src="/banner__image.png" alt="Imagem do desenvolvedor" width={285} height={41.5} />
       </div>
     </Container>
   )
