@@ -1,6 +1,9 @@
+"use client";
+
 // Components
 import { Container } from "@/components/Container"
-import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon"
+import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
+import { useSectionInView } from "@/lib/hooks";
 import Image from "next/image";
 
 // Icons
@@ -22,10 +25,14 @@ const socialListItems: ISocialIconsProps[] = [
 ]
 
 export const Hero = () => {
+  const { ref } = useSectionInView("Inicio", 0.5);
   return (
     <Container>
-      <div className="flex items-center justify-between">
-        <div>
+      <div ref={ref}
+        id="home"
+        className="md:flex items-center justify-between"
+      >
+        <div className="my-20 lg:my-0 md:w-full lg:w-2/4">
           {socialListItems.map((social, index) => (
             <SocialIcon key={index} icon={social.icon} link={social.link} />
           ))}
