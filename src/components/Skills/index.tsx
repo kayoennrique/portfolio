@@ -28,10 +28,13 @@ export default function Skills() {
   const { ref } = useSectionInView("Habilidades");
 
   return (
-    <section
+    <motion.section
+      initial={{ y: 0, x: "0", opacity: 0 }}
+      animate={{ y: 100, x: "0", opacity: 1 }}
+      whileInView="animate"
       ref={ref}
       id="skills"
-      className="w-auto mx-5 md:w-[95vw] py-11 md:mx-auto bg-white dark:bg-dark-bg shadow-lg z-40 relative"
+      className="w-auto mx-4 w-automd:w-[95vw] py-10 my-36 d:mx-auto rounded-3xl bg-yellow-300/10 dark:bg-dark-bg shadow-lg z-40 shadow-black/[0.2] relative"
     >
       <SectionHeading>Habilidades</SectionHeading>
       <Container>
@@ -51,6 +54,6 @@ export default function Skills() {
           ))}
         </ul>
       </Container>
-    </section>
+    </motion.section>
   );
 }

@@ -15,7 +15,7 @@ export default function Header() {
     <Container>
       <header className="z-[999] relative sm:py-20">
         <motion.div
-          className="fixed top-0 left-1/2 h-[4.5rem] w-full border-white border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.01] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[33rem] sm:rounded-2xl dark:bg-gray-300 dark:border-purple-600 dark:bg-opacity-35"
+          className="fixed top-0 left-1/2 h-[4.5rem] w-full border-white border-opacity-40 bg-white bg-opacity-60 shadow-lg shadow-black/[0.04] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[33rem] sm:rounded-2xl dark:bg-yellow-300/10 dark:border-purple-600 dark:bg-opacity-35"
           initial={{ y: -100, x: "-50%", opacity: 0 }}
           animate={{ y: 0, x: "-50%", opacity: 1 }}
         ></motion.div>

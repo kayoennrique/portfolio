@@ -43,7 +43,7 @@ export const Hero = () => {
           </h1>
           <p className="text-black text-3xl mb-7">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
         </div>
-        <Image className="mix-blend-hard" src="/banner__image.png" alt="Imagem do desenvolvedor" width={285} height={41.5} />
+        <Image className="mix-blend-normal" src="/banner__image.png" alt="Imagem do desenvolvedor" width={285} height={41.5} />
       </div>
     </Container>
   )

@@ -25,9 +25,20 @@ export const links = [
 
 export const skillsData = [
   "/react.png",
+  "/react-native.png",
+  "/redux.png",
   "/next-js-icon.png",
   "/typescript.png",
   "/js.png",
+  "/nodejs.png",
+  "/jest.png",
+  "/cypress.png",
+  "/expressjs.png",
+  "/tailwind-css-.png",
+  "/bootstrap.png",
+  "/styled-components.png",
+  "/material-ui.png",
+  "/sass.png",
+  "/css-3.png",
   "/html-5.png",
-  "/css-3.png"
 ] as const;
