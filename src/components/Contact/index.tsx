@@ -8,6 +8,21 @@ import { useSectionInView } from "@/lib/hooks";
 import { senderEmail } from "@/actions/sendEmail";
 import SubmitBtn from "../SubmitBtn";
 
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
+
 export default function Contact() {
   const { ref } = useSectionInView("Contato");
 
@@ -16,18 +31,10 @@ export default function Contact() {
       id="contact"
       ref={ref}
       className="relative mb-20 py-6 my-6 sm:mb-28 w-custom text-center rounded-3xl leading-8 scroll-mt-28 shadow-lg z-40 shadow-black/[0.2] bg-yellow-300/10"
-      initial={{
-        opacity: 0,
-      }}
-      whileInView={{
-        opacity: 1,
-      }}
-      transition={{
-        duration: 1,
-      }}
-      viewport={{
-        once: true,
-      }}
+      variants={fadeInAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true, }}
     >
       <SectionHeading>Contato</SectionHeading>
 
@@ -39,7 +46,7 @@ export default function Contact() {
         ou através do formulário abaixo
       </p>
 
-      <form className="mt-10 flex flex-col w-custom1 mx-auto my-auto dark:text-black"
+      <form className="mt-10 flex flex-col w-custom1 mx-auto my-auto text-slate-900"
         action={async formData => {
           const { data, error } = await senderEmail(formData);
 

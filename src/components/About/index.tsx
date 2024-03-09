@@ -12,11 +12,20 @@ export default function About() {
     <Container>
       <motion.section
         ref={ref}
-        className="mx-auto max-w-[55rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.175 }}
         id="about"
+        className="mx-auto max-w-[55rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+        initial={{
+          opacity: 0,
+        }}
+        whileInView={{
+          opacity: 1,
+        }}
+        transition={{
+          duration: 1,
+        }}
+        viewport={{
+          once: true,
+        }}
       >
         <SectionHeading>Sobre</SectionHeading>
         <p className="mb-3 text-slate-900">
