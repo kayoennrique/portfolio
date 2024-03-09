@@ -7,6 +7,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      width: {
+        'custom': '95vw',
+        'custom1': '45vw',
+      },
       colors: {
         'purple-base': '#F5F3E0'
       },
