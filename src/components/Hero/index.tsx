@@ -67,17 +67,17 @@ export const Hero = () => {
             e sou dev!
           </h1>
           <p className="text-slate-700 text-3xl mb-7">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
+          <a
+            className="flex items-center px-5 py-5 w-40 justify-center gap-2 h-[3rem] bg-purple-900 text-yellow-300 rounded-xl outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:bg-opacity-65"
+            href="/CurriculoKayoEnnrique.pdf"
+            download={true}
+          >
+            Download CV{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1" />
+          </a>
         </div>
         <Image className="mix-blend-normal" src="/banner__image.png" alt="Imagem do desenvolvedor" width={285} height={41.5} />
       </motion.div>
-      <a
-        className="group bg-black text-purple-900 font-bold px-7 py-3 w-48 flex items-center gap-2 rounded-2xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-purple-800 dark:bg-white/10"
-        href="/CurriculoKayoEnnrique.pdf"
-        download={true}
-      >
-        Download CV{" "}
-        <HiDownload className="opacity-60 group-hover:translate-y-1" />
-      </a>
     </Container>
   )
 }
