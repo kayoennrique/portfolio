@@ -30,7 +30,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="relative mb-20 py-6 my-6 sm:mb-28 w-custom text-center rounded-3xl leading-8 scroll-mt-28 shadow-lg z-40 shadow-black/[0.2] bg-yellow-300/10"
+      className="relative mb-20 py-6 my-6 sm:mb-28 w-custom text-center justify-center leading-8 scroll-mt-2"
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"

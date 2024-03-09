@@ -3,6 +3,8 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import ActiveSectionContextProvider from "../contexts/active-section";
 import Header from "@/components/Header";
+import 'swiper/css'
+import { ModalProvider } from "@/contexts/modal-context";
 
 const roboto = Roboto({
   weight: '400',
@@ -21,14 +23,15 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en">
-      <body className={`${roboto.className} bg-purple-base`}
-      >
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-        </ActiveSectionContextProvider>
-      </body>
-    </html>
+    <ModalProvider>
+      <html lang="en">
+        <body className={`${roboto.className} bg-purple-base`}>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+          </ActiveSectionContextProvider>
+        </body>
+      </html>
+    </ModalProvider>
   );
 }
