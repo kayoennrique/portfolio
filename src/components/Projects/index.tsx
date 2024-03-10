@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
 // Components
 
-import { ProjectCard, IProjectCardProps } from "../ProjectCard"
+import { ProjectCard, IProjectCardProps } from "../ProjectCard";
+import SectionHeading from "../SectionHeading";
 
 // Libs
-import { Swiper, SwiperSlide } from 'swiper/react'
-import SectionHeading from "../SectionHeading"
-import { useSectionInView } from "@/lib/hooks"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { useSectionInView } from "@/lib/hooks";
 
 const projectList: IProjectCardProps[] = [
   {

@@ -1,5 +1,5 @@
 // React
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 export const Container = ({ children }: { children?: ReactNode }) => {
   return (

@@ -1,12 +1,19 @@
 "use client";
 
+// React
 import React from "react";
-import { motion } from "framer-motion";
 import toast from "react-hot-toast";
-import SectionHeading from "../SectionHeading";
-import { useSectionInView } from "@/lib/hooks";
-import { senderEmail } from "@/actions/sendEmail";
+
+// Components
 import SubmitBtn from "../SubmitBtn";
+import SectionHeading from "../SectionHeading";
+
+// API
+import { senderEmail } from "@/api/sendEmail";
+
+// Libs
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -24,6 +31,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Contact() {
+
   const { ref } = useSectionInView("Contato");
 
   return (
@@ -37,15 +45,13 @@ export default function Contact() {
       viewport={{ once: true, }}
     >
       <SectionHeading>Contato</SectionHeading>
-
-      <p className="text-slate-700 -mt-5">
-        Entre em contato diretamente em{" "}
+      <p className="text-slate-700 -mt-5 dark:text-slate-200">
+        Contato direto em{" "}
         <a className="underline" href="mailto:kayo.ennrique@hotmail.com.br">
           kayo.ennrique@hotmail.com.br
         </a>{" "}
         ou através do formulário abaixo
       </p>
-
       <form className="mt-10 flex flex-col w-custom1 mx-auto my-auto text-slate-900"
         action={async formData => {
           const { data, error } = await senderEmail(formData);
@@ -59,14 +65,14 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4   mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           type="name"
           required
           maxLength={400}
           placeholder="Nome completo"
         />
         <input
-          className="h-14 px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4   mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -74,7 +80,7 @@ export default function Contact() {
           placeholder="Email"
         />
         <textarea
-          className="h-52 my-3 px-4 rounded-lg mb-4 border borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 px-4  rounded-lg mb-4 border borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Sua mensagem"
           required

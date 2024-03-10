@@ -1,12 +1,19 @@
 "use client";
 
+// React
 import React from "react";
+
+// Next.js
+import Image from "next/image";
+
+// Components
+import SectionHeading from "../SectionHeading";
+import { Container } from "../Container";
+
+// Libs
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { skillsData } from "@/lib/data";
-import { Container } from "../Container";
-import SectionHeading from "../SectionHeading";
-import Image from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -25,6 +32,7 @@ const fadeInAnimationVariants = {
 
 
 export default function Skills() {
+
   const { ref } = useSectionInView("Habilidades");
 
   return (
@@ -38,10 +46,10 @@ export default function Skills() {
     >
       <SectionHeading>Habilidades</SectionHeading>
       <Container>
-        <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-500">
+        <ul className="flex flex-wrap justify-center gap-2">
           {skillsData.map((skill, index) => (
             <motion.li
-              className="bg-black border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-black/10 dark:text-black/80"
+              className="bg-purple-300 border border-black/[0.1] rounded-xl px-5 py-3 dark:bg-yellow-400"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"

@@ -1,5 +1,5 @@
 // React
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 interface IButtonProps {
   children: ReactNode
@@ -18,12 +18,12 @@ export const Button = ({
   const setType = () => {
     if (type === 'outlined') {
       if (color === 'primary') {
-        return 'bg-none text-primary border-primary'
+        return 'bg-none text-slate-900 border-primary'
       } else if (color === 'light') {
-        return 'bg-none text-font-light dark:text-white border-font-light dark:border-white'
+        return 'bg-none dark:text-white border-font-light dark:border-white'
       }
     } else if (type === 'filled') {
-      return 'bg-primary text-white border-primary'
+      return 'bg-primary text-white border-primary dark:text-slate-800'
     }
   }
 

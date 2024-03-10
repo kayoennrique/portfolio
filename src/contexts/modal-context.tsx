@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import { useState, ReactNode, createContext } from "react"
+import { useState, ReactNode, createContext } from "react";
 
 interface IModalContextProps {
   isOpen: boolean

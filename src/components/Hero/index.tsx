@@ -6,7 +6,7 @@ import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
-// Next
+// Next.js
 import Image from "next/image";
 
 // Icons
@@ -61,22 +61,28 @@ export const Hero = () => {
           {socialListItems.map((social, index) => (
             <SocialIcon key={index} icon={social.icon} link={social.link} />
           ))}
-          <h1 className="my-6 font-bold text-5xl text-slate-700">
+          <h1 className="my-6 font-bold text-5xl text-slate-700 dark:text-white">
             Olá, me chamo <br />
-            <span className="text-purple-500">Kayo Ennrique </span>
+            <span className="text-purple-500 dark:text-yellow-500">Kayo Ennrique </span>
             e sou dev!
           </h1>
-          <p className="text-slate-700 text-3xl mb-7">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
+          <p className="text-slate-700 text-3xl mb-7 dark:text-white">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
           <a
-            className="flex items-center px-5 py-5 w-40 justify-center gap-2 h-[3rem] bg-purple-900 text-yellow-300 rounded-xl outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 disabled:scale-100 disabled:bg-opacity-65"
+            className="flex items-center px-5 py-5 w-40 justify-center gap-2 h-[3rem] bg-purple-500 text-white rounded-xl outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-yellow-500 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 dark:hover:bg-purple-500 dark:bg-yellow-500 dark:text-black "
             href="/CurriculoKayoEnnrique.pdf"
             download={true}
           >
-            Download CV{" "}
-            <HiDownload className="opacity-60 group-hover:translate-y-1" />
+            BAIXAR CV{" "}
+            <HiDownload className="opacity-60 group-hover:translate-y-1 text-white dark:text-black" />
           </a>
         </div>
-        <Image className="mix-blend-normal" src="/banner__image.png" alt="Imagem do desenvolvedor" width={285} height={41.5} />
+        <Image
+          className="mix-blend-normal"
+          src="/banner__image.png"
+          alt="Imagem do desenvolvedor"
+          width={285}
+          height={41.5}
+        />
       </motion.div>
     </Container>
   )
