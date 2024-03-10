@@ -12,7 +12,7 @@ const socialListItems: ISocialIconsProps[] = [
   },
   {
     icon: <FaInstagram />,
-    link: 'https://www.instagram.com/kayoennrique/'
+    link: 'https://www.instagram.com/kayoennrique/',
   },
 ]
 
