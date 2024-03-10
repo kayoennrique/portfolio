@@ -42,7 +42,7 @@ export default function Skills() {
       whileInView="animate"
       ref={ref}
       id="skills"
-      className="w-auto leading-8 scroll-mt-28 mx-4 md:w-[95vw] mt-24 py-12 my-24 d:mx-auto rounded-3xl bg-yellow-300/10 dark:bg-dark-bg shadow-lg z-40 shadow-black/[0.2] relative"
+      className="w-auto leading-8 scroll-mt-28 mx-4 md:w-[95vw] mt-24 mb-20 py-12 my-24 d:mx-auto rounded-3xl bg-yellow-300/10 dark:bg-dark-bg shadow-lg z-40 shadow-black/[0.2] relative"
     >
       <SectionHeading>Habilidades</SectionHeading>
       <Container>
