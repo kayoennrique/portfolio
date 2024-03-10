@@ -24,10 +24,10 @@ export const ProjectCard = ({ name, thumb, description, technologies, link, isAc
           <p className="text-font-light text-purple-800 font-bold mb-5 text-3xl text-center md:text-left dark:text-yellow-500">{name}</p>
           <p className="text-font-light hidden md:block text-slate-600 dark:text-slate-200">{description}</p>
         </div>
-        <div className="flex justify-start py-5 flex-wrap">
+        <div className="flex justify-center items-center py-5 flex-wrap">
           <div className="flex md:flex">
             {technologies.map((item, index) => (
-              <p key={index} className="bg-purple-400 rounded-lg justify-start text-white py-[2px] px-5 mr-2 mb-2 dark:bg-yellow-400 dark:text-slate-600">{item}</p>
+              <p key={index} className="bg-purple-400 rounded-lg text-white py-[2px] px-2 mr-2 mb-2 dark:bg-yellow-400 dark:text-slate-600 ">{item}</p>
             ))}
           </div>
         </div>

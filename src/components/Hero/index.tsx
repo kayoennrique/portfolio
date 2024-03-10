@@ -77,7 +77,7 @@ export const Hero = () => {
           </a>
         </div>
         <Image
-          className="mix-blend-normal"
+          className="flex mix-blend-normal"
           src="/banner__image.png"
           alt="Imagem do desenvolvedor"
           width={285}

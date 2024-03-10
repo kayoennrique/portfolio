@@ -38,7 +38,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="relative mb-20 py-6 my-6 sm:mb-28 w-custom text-center justify-center leading-8 scroll-mt-2"
+      className="relative py-12 my-6 text-center leading-8 scroll-mt-28"
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
@@ -52,7 +52,7 @@ export default function Contact() {
         </a>{" "}
         ou através do formulário abaixo
       </p>
-      <form className="mt-10 flex flex-col w-custom1 mx-auto my-auto text-slate-900"
+      <form className="mt-10 flex flex-col sm:w-custom1 mx-auto my-auto text-slate-900"
         action={async formData => {
           const { data, error } = await senderEmail(formData);
 
@@ -65,14 +65,14 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4   mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14  px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           type="name"
           required
           maxLength={400}
           placeholder="Nome completo"
         />
         <input
-          className="h-14 px-4   mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -80,7 +80,7 @@ export default function Contact() {
           placeholder="Email"
         />
         <textarea
-          className="h-52 my-3 px-4  rounded-lg mb-4 border borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-52 my-3 px-4 rounded-lg mb-4 border borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Sua mensagem"
           required
