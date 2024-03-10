@@ -8,6 +8,22 @@ import SectionHeading from "../SectionHeading";
 // Libs
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.05 * index,
+    },
+  }),
+};
 
 const projectList: IProjectCardProps[] = [
   {
@@ -38,7 +54,10 @@ export const Projects = () => {
   const { ref } = useSectionInView("Projetos", 0.5);
 
   return (
-    <section
+    <motion.section
+      initial={{ y: 0, x: "0", opacity: 0 }}
+      animate={{ y: 100, x: "0", opacity: 1 }}
+      whileInView="animate"
       ref={ref} id="projects"
       className="w-custom scroll-mt-28"
     >
@@ -77,6 +96,6 @@ export const Projects = () => {
           ))}
         </Swiper>
       </div>
-    </section>
+    </motion.section>
   )
 }
