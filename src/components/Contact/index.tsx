@@ -5,7 +5,6 @@ import React from "react";
 import toast from "react-hot-toast";
 
 // Components
-import SubmitBtn from "../SubmitBtn";
 import SectionHeading from "../SectionHeading";
 
 // API
@@ -14,6 +13,7 @@ import { senderEmail } from "@/api/sendEmail";
 // Libs
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import SubmitBtn from "../Button";
 
 const fadeInAnimationVariants = {
   initial: {
