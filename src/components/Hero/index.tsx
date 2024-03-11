@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 // Components
 import { Container } from "@/components/Container"
@@ -32,20 +32,25 @@ const fadeInAnimationVariants = {
 const socialListItems: ISocialIconsProps[] = [
   {
     icon: <FaLinkedin />,
-    link: 'https://www.linkedin.com/in/kayoennrique/'
+    link: 'https://www.linkedin.com/in/kayoennrique/',
+    label: 'Icone do Linkedin'
   },
   {
     icon: <FaGithub />,
-    link: 'https://github.com/kayoennrique'
+    link: 'https://github.com/kayoennrique',
+    label: 'Icone do Github'
   },
   {
     icon: <FaInstagram />,
-    link: 'https://www.instagram.com/kayoennrique/'
+    link: 'https://www.instagram.com/kayoennrique/',
+    label: 'Icone do Instagram'
   },
 ]
 
 export const Hero = () => {
+
   const { ref } = useSectionInView("Inicio", 0.5);
+
   return (
     <Container>
       <motion.div
@@ -59,7 +64,12 @@ export const Hero = () => {
       >
         <div className="my-20 lg:my-0 md:w-full lg:w-2/4">
           {socialListItems.map((social, index) => (
-            <SocialIcon key={index} icon={social.icon} link={social.link} />
+            <SocialIcon
+              key={index}
+              icon={social.icon}
+              link={social.link}
+              label={social.label}
+            />
           ))}
           <h1 className="my-6 font-bold text-5xl text-slate-700 dark:text-white">
             Olá, me chamo <br />
