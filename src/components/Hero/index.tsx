@@ -12,8 +12,8 @@ import Image from "next/image";
 // Icons
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { HiDownload } from "react-icons/hi";
-import { Button } from "../Button";
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { useTheme } from "@/contexts/theme-context";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -50,8 +50,17 @@ const socialListItems: ISocialIconsProps[] = [
 ]
 
 export const Hero = () => {
-  const router = useRouter()
+  const [heroImage, setHeroImage] = useState<string | undefined>(undefined);
+  const { theme } = useTheme()
   const { ref } = useSectionInView("Inicio", 0.5);
+
+  useEffect(() => {
+    if (theme === 'light') {
+      setHeroImage('/banner__image2.webp')
+    } else {
+      setHeroImage('/banner__image-dark.webp')
+    }
+  }, [theme])
 
   return (
     <Container>
@@ -95,13 +104,17 @@ export const Hero = () => {
             </a>
           </div>
         </div>
-        <Image
-          className="flex mix-blend-normal"
-          src="/banner__image2.webp"
-          alt="Imagem do desenvolvedor"
-          width={285}
-          height={41.5}
-        />
+        {heroImage ? (
+          <Image
+            className="mix-blend-normal lg:block"
+            src={heroImage}
+            alt="Imagem do desenvolvedor"
+            width={285}
+            height={41.5}
+          />
+        ) : (
+          <div className="h-[511px] w-[500px] lg:block"></div>
+        )}
       </motion.div>
     </Container>
   )
