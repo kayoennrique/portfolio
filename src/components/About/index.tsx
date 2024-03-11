@@ -49,9 +49,8 @@ export default function About() {
           </span>
           <span className="underline text-slate-900 dark:text-slate-300">Minhas habilidades principais incluem,</span>
           <span className="font-medium text-slate-900 dark:text-slate-300">{" "}
-            React (Next.js), React Native, Typescript, e Javascript
+            React (Next.js), React Native, Typescript, e Javascript.{" "}Também possuo conhecimentos consolidados em NodeJs, Jest, Cypress, Express, API&apos;s, TailwindCSS, SCSS, Bootstrap, Material UI, Sass, CSS3, e HTML5. Na busca continua em aprimorar minhas habilidades,
           </span>
-          . Também possuo conhecimentos consolidados em NodeJs, Jest, Cypress, Express, API's, TailwindCSS, SCSS, Bootstrap, Material UI, Sass, CSS3, e HTML5. Na busca continua em aprimorar minhas habilidades,
           <span className="font-medium text-slate-900 dark:text-slate-300"> {" "}procuro uma posição</span> em tempo integral como Desenvolvedor Front-End Júnior de Software/Web/Apps.
         </p>
         <p>

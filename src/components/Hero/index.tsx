@@ -5,15 +5,15 @@ import { Container } from "@/components/Container"
 import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 // Next.js
 import Image from "next/image";
+import { useTheme } from "@/contexts/theme-context";
 
 // Icons
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { HiDownload } from "react-icons/hi";
-import { useEffect, useState } from "react";
-import { useTheme } from "@/contexts/theme-context";
 
 const fadeInAnimationVariants = {
   initial: {
