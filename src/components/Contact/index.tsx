@@ -38,7 +38,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="relative py-12 my-6 text-center leading-8 scroll-mt-28"
+      className="relative py-12 px-4 my-6 text-center leading-8 scroll-mt-28"
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
@@ -65,7 +65,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14  px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-14 px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           type="name"
           required
           maxLength={400}

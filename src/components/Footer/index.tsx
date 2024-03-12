@@ -27,7 +27,7 @@ const socialListItems: ISocialIconsProps[] = [
 const Footer = () => {
 
   return (
-    <footer className="text-center py-12 ">
+    <footer className="text-center px-4 py-12 ">
       <div className="container relative mx-auto shadow-lg z-40 shadow-black/[0.2] bg-yellow-300/10 text-purple-500 rounded-3xl d:mx-auto p-6 dark:text-yellow-500 ">
         {socialListItems.map((social, index) => (
           <SocialIcon
