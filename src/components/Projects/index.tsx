@@ -59,7 +59,7 @@ export const Projects = () => {
       animate={{ y: 100, x: "0", opacity: 1 }}
       whileInView="animate"
       ref={ref} id="projects"
-      className="w-custom mb-20 scroll-mt-28"
+      className="w-full mb-20 overflow-hidden scroll-mt-28"
     >
       <SectionHeading>Projetos</SectionHeading>
       <div className="mx-4 lg:-mx-5">
