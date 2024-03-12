@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  transition: all ease .2s;
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -20,6 +16,24 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
+@layer base {
+  body {
+    --scrollbar-track-bg: dark:bg-bg-base;
+    --scrollbar-thumb-bg: dark:bg-dark-bg-base;
+
+    transition: all ease .2s;
+    color: rgb(var(--foreground-rgb));
+
+    &::-webkit-scrollbar {
+      width: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      @apply bg-bg-base dark:bg-dark-bg-base;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      @apply bg-bg-base rounded-[40px] dark:bg-dark-bg-base;
+    }
+  }
 }
