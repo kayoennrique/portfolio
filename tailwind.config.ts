@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       width: {
-        'custom': '95vw',
+        'custom': '98vw',
         'custom1': '45vw',
       },
       colors: {
