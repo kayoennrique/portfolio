@@ -17,23 +17,23 @@
 }
 
 @layer base {
-  body {
-    --scrollbar-track-bg: dark:bg-bg-base;
-    --scrollbar-thumb-bg: dark:bg-dark-bg-base;
-
+  * {
     transition: all ease .2s;
+  }
+
+  body {
     color: rgb(var(--foreground-rgb));
+  }
 
-    &::-webkit-scrollbar {
-      width: 20px;
-    }
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
 
-    &::-webkit-scrollbar-track {
-      @apply bg-bg-base dark:bg-dark-bg-base;
-    }
+  body::-webkit-scrollbar-track {
+    @apply bg-bg-base dark:bg-dark-bg-base;
+  }
 
-    &::-webkit-scrollbar-thumb {
-      @apply bg-bg-base rounded-[40px] dark:bg-dark-bg-base;
-    }
+  body::-webkit-scrollbar-thumb {
+    @apply bg-dark-bg-base dark:bg-bg-base rounded-[40px];
   }
 }
