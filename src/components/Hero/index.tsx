@@ -1,19 +1,28 @@
 'use client';
 
+// React
+import { useContext, useEffect, useState } from "react";
+
 // Components
 import { Container } from "@/components/Container"
-import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
-import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import SectionHeading from "../SectionHeading";
+import { ModalContext } from "@/contexts/modal-context";
 
 // Next.js
 import Image from "next/image";
 import { useTheme } from "@/contexts/theme-context";
+import { useRouter } from "next/navigation";
 
 // Icons
+import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
-import { HiDownload } from "react-icons/hi";
+import { HiDownload, HiOutlineDocumentDownload } from "react-icons/hi";
+import { Modal } from "../Modal";
+import { Button } from "../Button";
+
+// Libs
+import { motion } from "framer-motion";
+import { useSectionInView } from "@/lib/hooks";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -29,7 +38,6 @@ const fadeInAnimationVariants = {
     },
   }),
 };
-
 
 const socialListItems: ISocialIconsProps[] = [
   {
@@ -50,8 +58,10 @@ const socialListItems: ISocialIconsProps[] = [
 ]
 
 export const Hero = () => {
+  const router = useRouter();
   const [heroImage, setHeroImage] = useState<string | undefined>(undefined);
-  const { theme } = useTheme()
+  const { isOpen: isModalOpen, toggleVisibility: toggleModal } = useContext(ModalContext);
+  const { theme } = useTheme();
   const { ref } = useSectionInView("Inicio", 0.5);
 
   useEffect(() => {
@@ -60,7 +70,7 @@ export const Hero = () => {
     } else {
       setHeroImage('/banner__image-dark.webp')
     }
-  }, [theme])
+  }, [theme]);
 
   return (
     <Container>
@@ -71,7 +81,7 @@ export const Hero = () => {
         viewport={{ once: true, }}
         ref={ref}
         id="home"
-        className="md:flex scroll-mt-28 leading-8 items-center justify-between"
+        className="md:flex mb-20 scroll-mt-28 leading-8 items-center justify-between"
       >
         <div className="my-20 lg:my-0 md:w-full lg:w-2/4">
           {socialListItems.map((social, index) => (
@@ -87,21 +97,15 @@ export const Hero = () => {
             <span className="text-purple-500 dark:text-yellow-500">Kayo Ennrique </span>
             e sou dev!
           </h1>
-          <p className="text-slate-700 text-3xl mb-7 dark:text-white">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 🚀</p>
+          <p className="text-slate-700 text-3xl mb-7 dark:text-white">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 👊</p>
           <div className="flex items-center flex-col sm:flex-row justify-start gap-4 sm:w-3/4 lg:w-full">
-            <a className="flex items-center px-5 py-5 w-40 justify-center gap-2 h-[3rem] bg-purple-500 text-white rounded-xl outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-yellow-500 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 dark:hover:bg-purple-500 dark:bg-yellow-500 dark:text-black "
-              href="/#projects"
-            >
+            <Button onClick={() => router.push('/#projects')}>
               PROJETOS
-            </a>
-            <a
-              className="flex items-center px-5 py-5 w-40 justify-center gap-2 h-[3rem] bg-purple-500 text-white rounded-xl outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-yellow-500 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 dark:hover:bg-purple-500 dark:bg-yellow-500 dark:text-black "
-              href="/CurriculoKayoEnnrique.pdf"
-              download={true}
-            >
+            </Button>
+            <Button onClick={toggleModal}>
               BAIXAR CV{" "}
               <HiDownload className="opacity-60 group-hover:translate-y-1 text-white dark:text-black" />
-            </a>
+            </Button>
           </div>
         </div>
         {heroImage ? (
@@ -116,6 +120,17 @@ export const Hero = () => {
           <div className="h-[511px] w-[500px] lg:block"></div>
         )}
       </motion.div>
+      <Modal isOpen={isModalOpen}>
+        <SectionHeading>Baixe meu currículo</SectionHeading>
+        <div className="my-4mb-5">
+          <p className="mb-2 text-center text-slate-700 dark:text-white">Currículo em português</p>
+          <Button onClick={() => window.open('CurriculoKayoEnnrique.pdf', '_blank')}><HiOutlineDocumentDownload size={28} className="mr-2" /> Baixar</Button>
+        </div>
+        <div className="my-4">
+          <p className="mb-2 text-center text-slate-700 dark:text-white">Resume in english</p>
+          <Button onClick={() => window.open('resume-kayo-ennrique-english.pdf', '_blank')}><HiOutlineDocumentDownload size={28} className="mr-2" /> Download</Button>
+        </div>
+      </Modal>
     </Container>
-  )
+  );
 }
