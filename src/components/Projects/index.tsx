@@ -10,20 +10,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
 
 const projectList: IProjectCardProps[] = [
   {
@@ -54,48 +40,50 @@ export const Projects = () => {
   const { ref } = useSectionInView("Projetos", 0.5);
 
   return (
-    <motion.section
-      initial={{ y: 0, x: "0", opacity: 0 }}
-      animate={{ y: 100, x: "0", opacity: 1 }}
-      whileInView="animate"
-      ref={ref} id="projects"
-      className="w-full mb-20 overflow-hidden scroll-mt-28"
-    >
-      <SectionHeading>Projetos</SectionHeading>
-      <div className="mx-4 lg:-mx-5">
-        <Swiper
-          spaceBetween={60}
-          slidesPerView={1}
-          centeredSlides
-          loop
-          breakpoints={{
-            1024: {
-              slidesPerView: 1.5
-            },
-            1280: {
-              slidesPerView: 2
-            },
-            1536: {
-              slidesPerView: 2.5
-            },
-          }}
-        >
-          {projectList.map((project, index) => (
-            <SwiperSlide key={index} className="w-[767px]">
-              {({ isActive }) => (
-                <ProjectCard
-                  name={project.name}
-                  description={project.description}
-                  thumb={project.thumb}
-                  technologies={project.technologies}
-                  link={project.link}
-                  isActive={isActive}
-                />
-              )}
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </motion.section>
+    <div className="overflow-hidden w-full">
+      <motion.section
+        initial={{ y: 0, x: "0", opacity: 0 }}
+        animate={{ y: 100, x: "0", opacity: 1 }}
+        whileInView="animate"
+        ref={ref} id="projects"
+        className="mb-20 scroll-mt-28"
+      >
+        <SectionHeading>Projetos</SectionHeading>
+        <div className="mx-4 lg:-mx-5">
+          <Swiper
+            spaceBetween={60}
+            slidesPerView={1}
+            centeredSlides
+            loop
+            breakpoints={{
+              1024: {
+                slidesPerView: 1.5
+              },
+              1280: {
+                slidesPerView: 2
+              },
+              1536: {
+                slidesPerView: 2.5
+              },
+            }}
+          >
+            {projectList.map((project, index) => (
+              <SwiperSlide key={index} className="w-[767px]">
+                {({ isActive }) => (
+                  <ProjectCard
+                    name={project.name}
+                    description={project.description}
+                    thumb={project.thumb}
+                    technologies={project.technologies}
+                    link={project.link}
+                    isActive={isActive}
+                  />
+                )}
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </motion.section>
+    </div>
   )
 }

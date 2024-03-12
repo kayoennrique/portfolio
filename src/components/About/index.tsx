@@ -35,7 +35,7 @@ export default function About() {
         }}
       >
         <SectionHeading>Sobre</SectionHeading>
-        <p className="mb-3 text-slate-900 dark:text-slate-300">
+        <p className="mb-4 text-slate-900 dark:text-slate-300">
           Olá! Meu nome é Kayo Enrique
           <span className="font-medium text-slate-900 dark:text-slate-300 ">, sou formado em Comunicação Social - Jornalismo e atualmente estou em transição para carreira de Desenvolvimento Web.{" "}
           </span>
