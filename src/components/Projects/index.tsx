@@ -40,13 +40,14 @@ export const Projects = () => {
   const { ref } = useSectionInView("Projetos", 0.5);
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-full ">
       <motion.section
-        initial={{ y: 0, x: "0", opacity: 0 }}
-        animate={{ y: 100, x: "0", opacity: 1 }}
-        whileInView="animate"
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -20 }}
+        transition={{ duration: 0.3 }}
         ref={ref} id="projects"
-        className="mb-20 scroll-mt-28"
+        className="mb-0 my-28 scroll-mt-28"
       >
         <SectionHeading>Projetos</SectionHeading>
         <div className="mx-4 lg:-mx-5">

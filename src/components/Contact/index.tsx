@@ -38,11 +38,11 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="relative py-12 px-4 my-6 text-center leading-8 scroll-mt-28"
+      className="relative px-4 my-14 mb-auto text-center scroll-mt-28"
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
-      viewport={{ once: true, }}
+      viewport={{ once: true }}
     >
       <SectionHeading>Contato</SectionHeading>
       <p className="text-slate-700 -mt-5 dark:text-slate-200">
