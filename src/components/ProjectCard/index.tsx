@@ -15,7 +15,7 @@ export interface IProjectCardProps {
 
 export const ProjectCard = ({ name, thumb, description, technologies, link, isActive }: IProjectCardProps) => {
   return (
-    <div className={`flex flex-col relative bg-yellow-300/10 shadow-lg shadow-black/[0.2] p-10 rounded-xl sm:mb-28 md:flex-row gap-5 ${!isActive && 'blur-sm'}`}>
+    <div className={`flex flex-col relative bg-yellow-300/10 shadow-lg shadow-black/[0.2] p-10 rounded-3xl sm:mb-28 md:flex-row gap-5 ${!isActive && 'blur-sm'}`}>
       <div className="h-[251px] w-full md:w-[244px] min-w-[175px] overflow-hidden relative">
         <Image src={thumb} alt="Projetos" fill className="object-cover object-top" />
       </div>
