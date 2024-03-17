@@ -67,6 +67,13 @@ const projectList: IProjectCardProps[] = [
     thumb: "/meteora.png",
     technologies: ['React', 'ContextAPI', 'GIT'],
     link: 'https://meteora-bice-rho.vercel.app/'
+  },
+  {
+    name: "ByteBooks",
+    description: "React com Server Side Rendering para otimizar desempenho na aplicação. Uso de useContext, useMemo, e manipulação de estado global no carrinho.",
+    thumb: "/bytebooks.png",
+    technologies: ['React', 'SSR', 'GIT', 'Hooks'],
+    link: 'https://alurabooks-init-1h98a27r6-kayoennrique.vercel.app/'
   }
 ]
 
