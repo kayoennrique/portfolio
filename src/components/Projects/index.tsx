@@ -69,12 +69,26 @@ const projectList: IProjectCardProps[] = [
     link: 'https://meteora-bice-rho.vercel.app/'
   },
   {
+    name: "Aluroni",
+    description: "Criei um projeto React do zero usando Create React App, adotando melhores práticas de CSS, imports absolutos, SVGs com SVGR e 'classnames'.",
+    thumb: "/aluroni.png",
+    technologies: ['React', 'GIT', 'SASS', 'NPM'],
+    link: 'https://aluroni-5ujg.vercel.app/'
+  },
+  {
     name: "ByteBooks",
     description: "React com Server Side Rendering para otimizar desempenho na aplicação. Uso de useContext, useMemo, e manipulação de estado global no carrinho.",
     thumb: "/bytebooks.png",
     technologies: ['React', 'SSR', 'GIT', 'Hooks'],
     link: 'https://alurabooks-init-1h98a27r6-kayoennrique.vercel.app/'
-  }
+  },
+  {
+    name: "VidFlow",
+    description: "JavaScript, consumindo e processando dados de uma API para criar experiências web dinâmicas e interativas.",
+    thumb: "/vidflow.png",
+    technologies: ['JavaScript', 'GIT', 'API', 'NPM'],
+    link: 'https://vidflow-4d9n.vercel.app/'
+  },
 ]
 
 export const Projects = () => {
