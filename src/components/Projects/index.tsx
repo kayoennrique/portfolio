@@ -9,6 +9,7 @@ import SectionHeading from "../SectionHeading";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 
 const projectList: IProjectCardProps[] = [
@@ -95,6 +96,8 @@ export const Projects = () => {
 
   const { ref } = useSectionInView("Projetos", 0.5);
 
+  const t = useTranslations("Projects");
+
   return (
     <div className="overflow-hidden w-full ">
       <motion.section
@@ -105,7 +108,7 @@ export const Projects = () => {
         ref={ref} id="projects"
         className="mb-0 my-28 scroll-mt-28"
       >
-        <SectionHeading>Projetos</SectionHeading>
+        <SectionHeading>{t("title")}</SectionHeading>
         <div className="mx-4 lg:-mx-5">
           <Swiper
             spaceBetween={60}

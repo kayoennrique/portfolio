@@ -18,11 +18,12 @@ import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { HiDownload, HiOutlineDocumentDownload } from "react-icons/hi";
 import { Modal } from "../Modal";
-import { Button } from "../Button";
+import SubmitBtn, { Button } from "../Button";
 
 // Libs
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { useTranslations } from "next-intl";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -72,6 +73,8 @@ export const Hero = () => {
     }
   }, [theme]);
 
+  const t = useTranslations("Home");
+
   return (
     <Container>
       <motion.div
@@ -93,17 +96,17 @@ export const Hero = () => {
             />
           ))}
           <h1 className="my-6 font-bold text-5xl text-slate-700 dark:text-white">
-            Olá, me chamo <br />
+            {t("title")}<br />
             <span className="text-purple-500 dark:text-yellow-500">Kayo Ennrique </span>
-            e sou dev!
+            {t("title2")}
           </h1>
-          <p className="text-slate-700 text-3xl mb-7 dark:text-white">Há 8 meses desenvolvendo sites e aplicativos <br /> para projetos incríveis! 👊</p>
+          <p className="text-slate-700 text-3xl mb-7 dark:text-white">{t("title3")}<br />{t("title4")}</p>
           <div className="flex items-center flex-col sm:flex-row justify-start gap-4 sm:w-3/4 lg:w-full">
             <Button onClick={() => router.push('/#projects')}>
-              PROJETOS
+              {t("button_projects")}
             </Button>
             <Button onClick={toggleModal}>
-              BAIXAR CV{" "}
+              {t("button_resume")}
               <HiDownload className="opacity-60 group-hover:translate-y-1 text-white dark:text-black" />
             </Button>
           </div>

@@ -1,0 +1,45 @@
+{
+  "Home": {
+    "title": "Hello, my name is",
+    "title2": "and I'm developer!",
+    "title3": "8 months of experience developing websites and applications",
+    "title4": "for amazing projects! 👊",
+    "button_projects": "PROJECTS",
+    "button_resume": "Download CV"
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "About": {
+    "title": "About",
+    "content": "Hello! My name is Kayo Enrique, and I hold a degree in Social Communication - Journalism. I am currently transitioning to a career in Web Development and studying at Alura, specializing as a Front-End Developer. I find immense satisfaction in the areas of user experience and problem-solving during programming. These aspects are rewarding for me in the field of organization. I greatly enjoy conceiving innovative experiences that have a transformative impact on users.",
+    "content2": "My main skills include, ",
+    "content3": "React (Next.js), React Native, Typescript, and Javascript. I also have solid knowledge in NodeJs, Jest, Cypress, Express, APIs, TailwindCSS, SCSS, Bootstrap, Material UI, Sass, CSS3, and HTML5. In my continuous quest to improve my skills, I am seeking a full-time position as a Junior Front-End Developer for Software/Web/Apps. In my leisure time, I enjoy playing video games, watching series/movies, practicing jiu-jitsu, working out, and exploring new places."
+  },
+  "Projects": {
+    "title": "Projects",
+    "ByteBank": {
+      "description": "Bank management system, using TypeScript for a user-friendly interface, and Git for version control."
+    },
+    "Negotiation": {
+      "description": "Task Management Project: TypeScript for an intuitive interface, and Git for versioning."
+    },
+    "Devs&Dragons": {
+      "description": "Personal project: battle cards using JavaScript for logic, CSS for design, and Git for control. An engaging and strategic experience."
+    },
+    "button": "Visit Site"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Direct contact at",
+    "description2": "or through the form below",
+    "placeholder": "Full name",
+    "placeholder2": "Your message"
+  },
+  "SubmitBtn": {
+    "title": "Send"
+  },
+  "Footer": {
+    "content": "Developed by Kayo Ennrique. All rights reserved"
+  }
+}

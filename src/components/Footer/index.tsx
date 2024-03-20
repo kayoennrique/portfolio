@@ -4,6 +4,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 //Components
 import { ISocialIconsProps, SocialIcon } from "../SocialIcon";
+import { useTranslations } from "next-intl";
 
 const socialListItems: ISocialIconsProps[] = [
   {
@@ -26,6 +27,8 @@ const socialListItems: ISocialIconsProps[] = [
 
 const Footer = () => {
 
+  const t = useTranslations("Footer");
+
   return (
     <footer className="text-center px-4 py-12 ">
       <div className="container relative mx-auto shadow-lg z-40 shadow-black/[0.2] bg-yellow-300/10 text-purple-500 rounded-3xl d:mx-auto p-6 dark:text-yellow-500 ">
@@ -39,7 +42,7 @@ const Footer = () => {
         ))}
         <div className="container mx-auto flex items-center justify-center">
           <div className="text-center mt-4">
-            Desenvolvido por Kayo Ennrique. Todos os direitos reservados &copy;
+            &copy; {t("content")}
           </div>
         </div>
       </div>

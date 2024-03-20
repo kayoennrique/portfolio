@@ -3,6 +3,7 @@ import Image from "next/image";
 
 // Components
 import { Button } from "../Button";
+import { useTranslations } from "next-intl";
 
 export interface IProjectCardProps {
   name: string
@@ -14,6 +15,9 @@ export interface IProjectCardProps {
 }
 
 export const ProjectCard = ({ name, thumb, description, technologies, link, isActive }: IProjectCardProps) => {
+
+  const t = useTranslations("Projects");
+
   return (
     <div className={`flex flex-col relative bg-yellow-300/10 shadow-lg shadow-black/[0.2] p-10 rounded-3xl sm:mb-28 md:flex-row gap-5 ${!isActive && 'blur-sm'}`}>
       <div className="h-[251px] w-full md:w-[244px] min-w-[175px] overflow-hidden relative">
@@ -32,7 +36,7 @@ export const ProjectCard = ({ name, thumb, description, technologies, link, isAc
           </div>
         </div>
         <div className="relative bg-purple-500 rounded-full sm:w-40 mr-auto ml-auto outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-yellow-500 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 dark:bg-yellow-400 dark:hover:bg-purple-500">
-          <Button onClick={() => window.open(link, '_ blank')}>Visitar Site</Button>
+          <Button onClick={() => window.open(link, '_ blank')}>{t("button")}</Button>
         </div>
 
       </div>

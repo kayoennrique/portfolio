@@ -14,6 +14,7 @@ import { senderEmail } from "@/api/sendEmail";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import SubmitBtn from "../Button";
+import { useTranslations } from "next-intl";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -34,6 +35,8 @@ export default function Contact() {
 
   const { ref } = useSectionInView("Contato");
 
+  const t = useTranslations("Contact");
+
   return (
     <motion.section
       id="contact"
@@ -44,13 +47,13 @@ export default function Contact() {
       whileInView="animate"
       viewport={{ once: true }}
     >
-      <SectionHeading>Contato</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
       <p className="text-slate-700 -mt-5 dark:text-slate-200">
-        Contato direto em{" "}
+        {t("description")}{" "}
         <a className="underline" href="mailto:kayo.ennrique@hotmail.com.br">
           kayo.ennrique@hotmail.com.br
         </a>{" "}
-        ou através do formulário abaixo
+        {t("description2")}
       </p>
       <form className="mt-10 flex flex-col sm:w-custom1 mx-auto my-auto text-slate-900"
         action={async formData => {
@@ -69,7 +72,7 @@ export default function Contact() {
           type="name"
           required
           maxLength={400}
-          placeholder="Nome completo"
+          placeholder={t("placeholder")}
         />
         <input
           className="h-14 px-4 mb-4 rounded-lg border borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
@@ -82,7 +85,7 @@ export default function Contact() {
         <textarea
           className="h-52 my-3 px-4 rounded-lg mb-4 border borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Sua mensagem"
+          placeholder={t("placeholder2")}
           required
           maxLength={5000}
         />

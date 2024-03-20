@@ -14,6 +14,7 @@ import { Container } from "../Container";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { skillsData } from "@/lib/data";
+import { useTranslations } from "next-intl";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -35,6 +36,8 @@ export default function Skills() {
 
   const { ref } = useSectionInView("Habilidades");
 
+  const t = useTranslations("Skills");
+
   return (
     <motion.section
       initial={{ y: 0, x: "0", opacity: 0 }}
@@ -44,7 +47,7 @@ export default function Skills() {
       id="skills"
       className="w-auto leading-8 scroll-mt-28 mx-4 md:w-[95vw] mt-24 mb-20 py-12 my-24 d:mx-auto rounded-3xl bg-yellow-300/10 dark:bg-dark-bg shadow-lg z-40 shadow-black/[0.2] relative"
     >
-      <SectionHeading>Habilidades</SectionHeading>
+      <SectionHeading>{t("title")}</SectionHeading>
       <Container>
         <ul className="flex flex-wrap justify-center gap-2">
           {skillsData.map((skill, index) => (
