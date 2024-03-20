@@ -33,7 +33,7 @@ export const skillsData = [
   "/nodejs.png",
   "/jest.png",
   "/cypress.png",
-  "/expressjs.png",
+  "/express.webp",
   "/tailwind-css-.png",
   "/bootstrap.png",
   "/styled-components.png",

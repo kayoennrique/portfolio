@@ -110,6 +110,7 @@ export const Hero = () => {
         </div>
         {heroImage ? (
           <Image
+            loading="lazy"
             className="mix-blend-normal lg:block"
             src={heroImage}
             alt="Imagem do desenvolvedor"
