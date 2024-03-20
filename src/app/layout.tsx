@@ -7,6 +7,8 @@ import 'swiper/css'
 import { ModalProvider } from "@/contexts/modal-context";
 import ThemeContextProvider from "@/contexts/theme-context";
 import ThemeSwitch from "@/components/ToggleTheme";
+import { Toaster } from "react-hot-toast";
+import Footer from "@/components/Footer";
 
 const roboto = Roboto({
   weight: '400',
@@ -32,6 +34,10 @@ export default function RootLayout({
             <ActiveSectionContextProvider>
               <Header />
               {children}
+              <Footer />
+              <Toaster
+                position="bottom-center"
+                reverseOrder={false} />
               <ThemeSwitch aria-label="Botão dark mode" />
             </ActiveSectionContextProvider>
           </ThemeContextProvider>
