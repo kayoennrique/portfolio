@@ -18,14 +18,8 @@
   },
   "Projects": {
     "title": "Projetos",
-    "ByteBank": {
-      "description": "Sistema de gerenciamento bancário, com TypeScript para a interface amigável, Git para controle de versão."
-    },
-    "Negotiation": {
-      "description": "Projeto de Gestão de Tarefas: TypeScript para interface intuitiva, Git para versionamento."
-    },
-    "Devs&Dragons": {
-      "description": "Projeto pessoal: cartas em batalha usando JavaScript para lógica, CSS para design e Git para controle. Uma experiência envolvente e estratégica."
+    "AluraCases": {
+      "description": "Explorei o Framework Next.js, aprendendo sobre criação de projetos, geração de conteúdo e SEO. Pronto para aplicar esse conhecimento!"
     },
     "button": "Visitar Site"
   },
