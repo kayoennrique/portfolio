@@ -12,11 +12,37 @@ import clsx from "clsx";
 
 // Libs
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
+
 import { useActiveSectionContext } from "@/contexts/active-section";
+import { useTranslations } from "next-intl";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const t = useTranslations("Header");
+
+  const links = [
+    {
+      name: t("title"),
+      hash: "#home",
+    },
+    {
+      name: t("title2"),
+      hash: "#skills",
+    },
+    {
+      name: t("title3"),
+      hash: "#about",
+    },
+    {
+      name: t("title4"),
+      hash: "#projects",
+    },
+    {
+      name: t("title5"),
+      hash: "#contact",
+    },
+  ] as const;
 
   return (
     <Container>

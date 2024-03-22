@@ -1,7 +1,6 @@
 'use client';
 
 // Components
-
 import { ProjectCard, IProjectCardProps } from "../ProjectCard";
 import SectionHeading from "../SectionHeading";
 
@@ -10,8 +9,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-
-
 
 export const Projects = () => {
 
@@ -29,70 +26,70 @@ export const Projects = () => {
     },
     {
       name: "ByteBank",
-      description: "Sistema de gerenciamento bancário, com TypeScript para a interface amigável, Git para controle de versão.",
+      description: `${t("ByteBank.description")}`,
       thumb: "/image.png",
       technologies: ['TypeScipt', 'GIT'],
       link: 'https://bytebank2-p6v90fcjb-kayoennrique.vercel.app/'
     },
     {
       name: "Hello World!",
-      description: "Projeto em React Router com JavaScript, implementando rotas, páginas de erro 404 e rotas dinâmicas",
+      description: `${t("HelloWorld.description")}`,
       thumb: "/hello-world.png",
       technologies: ['React', 'JavaScript', 'GIT',],
       link: 'https://helloworld-green-one.vercel.app/'
     },
     {
       name: "Organo",
-      description: "Criado em React, adaptei Organo 2.0 com melhorias, aprendendo sobre props, closures, e estados. Refatorei e compreendi os fundamentos do React.",
+      description: `${t("Organo.description")}`,
       thumb: "/organo.png",
       technologies: ['React', 'GIT', 'TypeScript'],
       link: 'https://organo-alpha-five.vercel.app/'
     },
     {
       name: "Studies",
-      description: "Desenvolvi em React com TypeScript, SASS, componentes de classe e função, manipulação de props e arrays",
+      description: `${t("Studies.description")}`,
       thumb: "/studies.png",
       technologies: ['React', 'TypeScript', 'GIT', 'SASS'],
       link: 'https://studies-dun.vercel.app/'
     },
     {
       name: "AlfaBit",
-      description: "Explorei Next.js e Tailwind, abordando setup inicial, tokens de design, Atomic Design, Headless UI, Storybook e publicação de bibliotecas de componentes.",
+      description: `${t("AlfaBit.description")}`,
       thumb: "/alfabit.png",
       technologies: ['Next.js', 'Tailwind', 'NPM', 'Storybook'],
       link: 'https://alfabit.vercel.app/?path=/story/design-system-molecules-notice--primary'
     },
     {
       name: "Cinetag",
-      description: "Projeto feito para prática do uso do React",
+      description: `${t("Cinetag.description")}`,
       thumb: "/cinetag.png",
       technologies: ['React', 'CSS Modules', 'GIT'],
       link: 'https://cinetag-two-omega.vercel.app/'
     },
     {
       name: "Meteora",
-      description: "React gerenciando o estado globalmente com ContextAPI",
+      description: `${t("Meteora.description")}`,
       thumb: "/meteora.png",
       technologies: ['React', 'ContextAPI', 'GIT'],
       link: 'https://meteora-bice-rho.vercel.app/'
     },
     {
       name: "Aluroni",
-      description: "Criei um projeto React do zero usando Create React App, adotando melhores práticas de CSS, imports absolutos, SVGs com SVGR e 'classnames'.",
+      description: `${t("Aluroni.description")}`,
       thumb: "/aluroni.png",
       technologies: ['React', 'GIT', 'SASS', 'NPM'],
       link: 'https://aluroni-5ujg.vercel.app/'
     },
     {
       name: "ByteBooks",
-      description: "React com Server Side Rendering para otimizar desempenho na aplicação. Uso de useContext, useMemo, e manipulação de estado global no carrinho.",
+      description: `${t("ByteBooks.description")}`,
       thumb: "/bytebooks.png",
       technologies: ['React', 'SSR', 'GIT', 'Hooks'],
       link: 'https://alurabooks-init-1h98a27r6-kayoennrique.vercel.app/'
     },
     {
       name: "VidFlow",
-      description: "JavaScript, consumindo e processando dados de uma API para criar experiências web dinâmicas e interativas.",
+      description: `${t("VidFlow.description")}`,
       thumb: "/vidflow.png",
       technologies: ['JavaScript', 'GIT', 'API', 'NPM'],
       link: 'https://vidflow-4d9n.vercel.app/'

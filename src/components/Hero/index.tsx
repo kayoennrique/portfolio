@@ -125,7 +125,7 @@ export const Hero = () => {
         )}
       </motion.div>
       <Modal isOpen={isModalOpen}>
-        <SectionHeading>Baixe meu currículo</SectionHeading>
+        <SectionHeading>{t("title5")}</SectionHeading>
         <div className="my-4mb-5">
           <p className="mb-2 text-center text-slate-700 dark:text-white">Currículo em português</p>
           <Button onClick={() => window.open('CurriculoKayoEnnrique.pdf', '_blank')}><HiOutlineDocumentDownload size={28} className="mr-2" /> Baixar</Button>

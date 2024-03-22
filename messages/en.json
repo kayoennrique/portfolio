@@ -1,11 +1,19 @@
 {
+  "Header": {
+    "title": "Home",
+    "title2": "Skills",
+    "title3": "About",
+    "title4": "Projects",
+    "title5": "Contact"
+  },
   "Home": {
     "title": "Hello, my name is",
-    "title2": "and I'm developer!",
-    "title3": "8 months of experience developing websites and applications",
+    "title2": "and I'm dev!",
+    "title3": "9 months of experience developing websites and applications",
     "title4": "for amazing projects! 👊",
     "button_projects": "PROJECTS",
-    "button_resume": "Download CV"
+    "button_resume": "Download CV",
+    "title5": "Download my resume"
   },
   "Skills": {
     "title": "Skills"
@@ -19,7 +27,37 @@
   "Projects": {
     "title": "Projects",
     "AluraCases": {
-      "description": "I explored the Next.js Framework , learning about project creation, content generation and SEO. Ready to apply this knowledge!"
+      "description": "I explored the Next.js Framework, learning about project creation, content generation and SEO. Ready to apply this knowledge!"
+    },
+    "ByteBank": {
+      "description": "Bank management system, with TypeScript for the user-friendly interface, Git for version control."
+    },
+    "HelloWorld": {
+      "description": "Project in React Router with JavaScript, implementing routes, 404 error pages, and dynamic routes."
+    },
+    "Organo": {
+      "description": "Created in React, I adapted Organo 2.0 with improvements, learning about props, closures, and states. I refactored and understood the fundamentals of React."
+    },
+    "Studies": {
+      "description": "I developed in React with TypeScript, SASS, class and function components, props and arrays manipulation."
+    },
+    "AlfaBit": {
+      "description": "I explored Next.js and Tailwind, covering initial setup, design tokens, Atomic Design, Headless UI, Storybook, and publishing component libraries."
+    },
+    "Cinetag": {
+      "description": "Project made for practicing the use of React."
+    },
+    "Meteora": {
+      "description": "React managing global state with ContextAPI."
+    },
+    "Aluroni": {
+      "description": "I created a React project from scratch using Create React App, adopting best CSS practices, absolute imports, SVGs with SVGR, and 'classnames'."
+    },
+    "ByteBooks": {
+      "description": "React with Server Side Rendering to optimize performance in the application. Usage of useContext, useMemo, and global state manipulation in the shopping cart."
+    },
+    "VidFlow": {
+      "description": "JavaScript, consuming and processing data from an API to create dynamic and interactive web experiences."
     },
     "button": "Visit Site"
   },
