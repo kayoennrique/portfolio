@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "Inicio",
-    "title2": "Habilidades",
-    "title3": "Sobre",
-    "title4": "Projetos",
-    "title5": "Contato"
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
   },
   "Home": {
     "title": "Olá, me chamo",

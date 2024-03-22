@@ -1,10 +1,10 @@
 {
   "Header": {
-    "title": "Home",
-    "title2": "Skills",
-    "title3": "About",
-    "title4": "Projects",
-    "title5": "Contact"
+    "home": "Home",
+    "skills": "Skills",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "Home": {
     "title": "Hello, my name is",

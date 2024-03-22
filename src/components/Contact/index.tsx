@@ -40,7 +40,7 @@ const fadeInAnimationVariants = {
 
 export default function Contact() {
 
-  const { ref } = useSectionInView("Contato");
+  const { ref } = useSectionInView("contact");
 
   const t = useTranslations("Contact");
 

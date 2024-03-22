@@ -14,7 +14,7 @@ import { useTranslations } from "next-intl";
 
 export default function About() {
 
-  const { ref } = useSectionInView("Sobre", 0.5);
+  const { ref } = useSectionInView("about", 0.5);
 
   const t = useTranslations("About");
 

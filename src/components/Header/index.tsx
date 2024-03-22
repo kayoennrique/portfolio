@@ -15,34 +15,14 @@ import { motion } from "framer-motion";
 
 import { useActiveSectionContext } from "@/contexts/active-section";
 import { useTranslations } from "next-intl";
+import { links } from "@/lib/data";
+
 
 export default function Header() {
+
   const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   const t = useTranslations("Header");
-
-  const links = [
-    {
-      name: t("title"),
-      hash: "#home",
-    },
-    {
-      name: t("title2"),
-      hash: "#skills",
-    },
-    {
-      name: t("title3"),
-      hash: "#about",
-    },
-    {
-      name: t("title4"),
-      hash: "#projects",
-    },
-    {
-      name: t("title5"),
-      hash: "#contact",
-    },
-  ] as const;
 
   return (
     <Container>
@@ -75,7 +55,7 @@ export default function Header() {
                     setTimeOfLastClick(Date.now());
                   }}
                 >
-                  {link.name}
+                  {t(link.name)}
                   {link.name === activeSection && (
                     <motion.span
                       className="bg-purple-500 rounded-2xl absolute inset-0 -z-10 dark:bg-yellow-400"
@@ -95,4 +75,6 @@ export default function Header() {
       </header>
     </Container>
   );
-}  
+}
+
+

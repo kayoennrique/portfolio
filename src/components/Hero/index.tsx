@@ -63,7 +63,7 @@ export const Hero = () => {
   const [heroImage, setHeroImage] = useState<string | undefined>(undefined);
   const { isOpen: isModalOpen, toggleVisibility: toggleModal } = useContext(ModalContext);
   const { theme } = useTheme();
-  const { ref } = useSectionInView("Inicio", 0.5);
+  const { ref } = useSectionInView("home", 0.5);
 
   useEffect(() => {
     if (theme === 'light') {

@@ -12,7 +12,7 @@ import { useTranslations } from "next-intl";
 
 export const Projects = () => {
 
-  const { ref } = useSectionInView("Projetos", 0.5);
+  const { ref } = useSectionInView("projects", 0.5);
 
   const t = useTranslations("Projects");
 

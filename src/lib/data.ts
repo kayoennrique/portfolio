@@ -1,3 +1,30 @@
+import { useTranslations } from "next-intl";
+
+
+
+export const links = [
+  {
+    name: "home",
+    hash: "#home",
+  },
+  {
+    name: "skills",
+    hash: "#skills",
+  },
+  {
+    name: "about",
+    hash: "#about",
+  },
+  {
+    name: "projects",
+    hash: "#projects",
+  },
+  {
+    name: "contact",
+    hash: "#contact",
+  },
+] as const;
+
 export const skillsData = [
   "/react.png",
   "/react-native.png",
