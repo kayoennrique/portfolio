@@ -23,24 +23,9 @@ import {
   RiMessageFill
 } from "react-icons/ri";
 
-const fadeInAnimationVariants = {
-  initial: {
-    opacity: 0,
-    y: 100,
-  },
-
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
-
 export default function Contact() {
 
-  const { ref } = useSectionInView("contact");
+  const { ref } = useSectionInView("contact", 0.5);
 
   const t = useTranslations("Contact");
 
@@ -49,10 +34,11 @@ export default function Contact() {
       id="contact"
       ref={ref}
       className="relative px-4 my-14 mb-auto text-center scroll-mt-28"
-      variants={fadeInAnimationVariants}
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true }}
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 20 }}
+      transition={{ duration: 1 }}
+
     >
       <SectionHeading>{t("title")}</SectionHeading>
       <p className="text-slate-700 -mt-5 dark:text-slate-200">

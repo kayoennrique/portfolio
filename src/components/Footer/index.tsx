@@ -24,7 +24,6 @@ const socialListItems: ISocialIconsProps[] = [
   },
 ]
 
-
 const Footer = () => {
 
   const t = useTranslations("Footer");

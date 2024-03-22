@@ -102,7 +102,7 @@ export const Projects = () => {
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: -20 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 1 }}
         ref={ref} id="projects"
         className="mb-0 my-28 scroll-mt-28"
       >

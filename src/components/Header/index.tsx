@@ -12,11 +12,11 @@ import clsx from "clsx";
 
 // Libs
 import { motion } from "framer-motion";
-
-import { useActiveSectionContext } from "@/contexts/active-section";
 import { useTranslations } from "next-intl";
 import { links } from "@/lib/data";
 
+// Context
+import { useActiveSectionContext } from "@/contexts/active-section";
 
 export default function Header() {
 

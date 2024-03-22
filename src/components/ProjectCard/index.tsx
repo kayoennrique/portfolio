@@ -38,8 +38,7 @@ export const ProjectCard = ({ name, thumb, description, technologies, link, isAc
         <div className="relative bg-purple-500 rounded-full sm:w-40 mr-auto ml-auto outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-yellow-500 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 dark:bg-yellow-400 dark:hover:bg-purple-500">
           <Button onClick={() => window.open(link, '_ blank')}>{t("button")}</Button>
         </div>
-
       </div>
     </div>
-  )
+  );
 }

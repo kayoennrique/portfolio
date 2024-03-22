@@ -7,6 +7,8 @@ import { useContext, useEffect, useState } from "react";
 import { Container } from "@/components/Container"
 import SectionHeading from "../SectionHeading";
 import { ModalContext } from "@/contexts/modal-context";
+import { Modal } from "../Modal";
+import { Button } from "../Button";
 
 // Next.js
 import Image from "next/image";
@@ -17,8 +19,6 @@ import { useRouter } from "next/navigation";
 import { SocialIcon, ISocialIconsProps } from "@/components/SocialIcon";
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { HiDownload, HiOutlineDocumentDownload } from "react-icons/hi";
-import { Modal } from "../Modal";
-import SubmitBtn, { Button } from "../Button";
 
 // Libs
 import { motion } from "framer-motion";
