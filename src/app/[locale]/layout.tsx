@@ -11,6 +11,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "@/components/Footer";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import { LanguageToggle } from "@/components/ToggleLanguage";
 
 const roboto = Roboto({
   weight: '400',
@@ -53,6 +54,7 @@ export default function RootLayout({
                   position="bottom-center"
                   reverseOrder={false} />
                 <ThemeSwitch aria-label="Botão dark mode" />
+                <LanguageToggle />
               </ActiveSectionContextProvider>
             </ThemeContextProvider>
           </NextIntlClientProvider>
