@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+   <h1 align="center">
+    Kayo Ennrique DEV Portfolio
+    </h1>
+</p>
 
-## Getting Started
+This is the repository of my personal portfolio, where I showcase my projects and professional experiences. This website was created with the aim of presenting my work in a clear and attractive manner to potential employers, coworkers, and clients.
 
-First, run the development server:
+<p align="center">
+ <img alt="Repository size" src="https://img.shields.io/github/repo-size/kayoennrique/portfolio?color=DB6B27">
+  <a aria-label="Last Commit" href="https://github.com/kayoennrique/portfolio/commits/develop-2">
+  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/kayoennrique/portfolio?color=DB5B39">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-4e5acf">
+  </a>
+</p>
+
+<p align="center">
+  <a target="_blank" href="https://www.typescriptlang.org">
+    <img src="https://img.shields.io/static/v1?color=blue&label=Typescript&message=TS&?style=plastic&logo=Typescript">
+  </a>
+  <a target="_blank" href="https://reactjs.org/">
+    <img alt="ReactJS" src="https://img.shields.io/static/v1?color=purple&label=React&message=JS&?style=plastic&logo=React">
+  </a>
+  <a target="_blank" href="https://nextjs.org/">
+    <img alt="Next.js" src="https://img.shields.io/static/v1?color=black&label=Next&message=JS&?style=plastic&logo=Next.js">
+  </a>
+  <a target="_blank" href="https://tailwindcss.com/">
+    <img src="https://img.shields.io/static/v1?color=yellow&label=Tailwind&message=CSS&?style=plastic&logo=TailwindCSS">
+  </a>
+</p>
+
+<!-- ![GIF of running application](zoop-gif.gif) -->
+
+## 🔨 Project features
+
+The application development features the following resources:
+
+- App navigation.
+- Interaction with visual elements of the application such as modals, inputs, etc.
+- Internationalization.
+- Dark Mode.
+
+## 💻 Techniques and technologies used
+
+The project utilizes the following technologies and libraries:
+
+- `Next.js` - Next.js is a React front-end development web framework.
+- `React` - JavaScript Framework.
+- `TypeScript` - Main programming language.
+- `Tailwind CSS` - Utility framework for responsive and fast design.
+- `next-intl` - Library for internationalization in NextJS applications.
+- `classnames` - Library for managing CSS classes.
+- `resend` - Library for state management in React applications.
+- `framer-motion` - Library for UI animations in React.
+- `react-icons` - Library with a variety of icons for React applications.
+- `swiper` - Library for creating responsive carousels and sliders.
+
+And much more...
+
+## 🛠️ Open and run the project
+
+- Install dependencies using npm:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Using  npm
+npm i
+
+# Using  yarn
+yarn add
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Start the project locally:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Using  npm
+npm run dev
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+# Using  yarn
+yarn dev
+```
 
-## Learn More
+## Developers/Contributors :octocat:
 
-To learn more about Next.js, take a look at the following resources:
+This is the team responsible for creating this component library
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| [<img src="https://github.com/kayoennrique.png" width=120><br><sub>Kayo Ennrique</sub>](https://github.com/kayoennrique) |
+| :---:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I hope you do the most of this project to improve yourself! And if you want to say hello, I'm there on LinkedIn [Kayo Ennrique Pereira](https://www.linkedin.com/in/kayoennrique/). :wave:
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is under the [MIT License](https://opensource.org/licenses/MIT).
