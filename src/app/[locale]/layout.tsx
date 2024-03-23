@@ -9,6 +9,7 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import type { Metadata } from "next";
 import { Roboto_Condensed } from 'next/font/google'
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/react";
 
 // Styles
 import "./globals.css";
@@ -63,6 +64,7 @@ export default function RootLayout({
                   reverseOrder={false} />
                 <ThemeSwitch aria-label="Botão dark mode" />
                 <LanguageToggle />
+                <Analytics />
               </ActiveSectionContextProvider>
             </ThemeContextProvider>
           </NextIntlClientProvider>
