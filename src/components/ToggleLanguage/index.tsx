@@ -28,11 +28,11 @@ export function LanguageToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => router.push(pathname, { locale: "en" })}>
-          English
+          🇺🇸 English 
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => router.push(pathname, { locale: "pt" })}>
-          Português
-        </DropdownMenuItem>
+          🇧🇷 Português
+       </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );
