@@ -143,5 +143,5 @@ export const Projects = () => {
         </div>
       </motion.section>
     </div>
-  )
+  );
 }

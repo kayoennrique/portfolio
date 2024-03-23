@@ -59,11 +59,13 @@ const socialListItems: ISocialIconsProps[] = [
 ]
 
 export const Hero = () => {
+
   const router = useRouter();
   const [heroImage, setHeroImage] = useState<string | undefined>(undefined);
   const { isOpen: isModalOpen, toggleVisibility: toggleModal } = useContext(ModalContext);
   const { theme } = useTheme();
   const { ref } = useSectionInView("home", 0.5);
+  const t = useTranslations("Home");
 
   useEffect(() => {
     if (theme === 'light') {
@@ -72,8 +74,6 @@ export const Hero = () => {
       setHeroImage('/banner__image-dark.webp')
     }
   }, [theme]);
-
-  const t = useTranslations("Home");
 
   return (
     <Container>

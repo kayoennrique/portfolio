@@ -4,7 +4,6 @@ import { useInView } from "react-intersection-observer";
 import type { SectionName } from "./types";
 import { useActiveSectionContext } from "@/contexts/active-section";
 
-
 export function useSectionInView(sectionName: SectionName, threshold = 0.75) {
   const { ref, inView } = useInView({
     threshold

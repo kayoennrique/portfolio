@@ -3,6 +3,7 @@
 // React
 import * as React from "react";
 import { Languages } from "lucide-react";
+import { usePathname, useRouter } from "@/navigation";
 
 // Components
 import {
@@ -11,7 +12,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/DropdownMenu"
-import { usePathname, useRouter } from "@/navigation";
 
 export function LanguageToggle() {
 
@@ -28,11 +28,11 @@ export function LanguageToggle() {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem onClick={() => router.push(pathname, { locale: "en" })}>
-          🇺🇸 English 
+          🇺🇸 English
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => router.push(pathname, { locale: "pt" })}>
           🇧🇷 Português
-       </DropdownMenuItem>
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

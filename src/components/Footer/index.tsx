@@ -1,4 +1,3 @@
-
 // Icons
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 

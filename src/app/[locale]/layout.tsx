@@ -1,20 +1,29 @@
-import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import "./globals.css";
-import ActiveSectionContextProvider from "../../contexts/active-section";
+// Components
+import { LanguageToggle } from "@/components/ToggleLanguage";
 import Header from "@/components/Header";
+import ThemeSwitch from "@/components/ToggleTheme";
+import Footer from "@/components/Footer";
+
+// Next.js
+import { NextIntlClientProvider, useMessages } from "next-intl";
+import type { Metadata } from "next";
+import { Roboto_Condensed } from 'next/font/google'
+import { notFound } from "next/navigation";
+
+// Styles
+import "./globals.css";
 import 'swiper/css'
+
+// Contexts
+import ActiveSectionContextProvider from "../../contexts/active-section";
 import { ModalProvider } from "@/contexts/modal-context";
 import ThemeContextProvider from "@/contexts/theme-context";
-import ThemeSwitch from "@/components/ToggleTheme";
-import { Toaster } from "react-hot-toast";
-import Footer from "@/components/Footer";
-import { notFound } from "next/navigation";
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import { LanguageToggle } from "@/components/ToggleLanguage";
 
-const roboto = Roboto({
-  weight: '400',
+// React
+import { Toaster } from "react-hot-toast";
+
+const robotoCondensed = Roboto_Condensed({
+  weight: '500',
   subsets: ['latin'],
 })
 
@@ -42,13 +51,12 @@ export default function RootLayout({
   return (
     <ModalProvider>
       <html lang={locale} >
-        <body className={`${roboto.className} bg-bg-base dark:bg-dark-bg-base`}>
+        <body className={`${robotoCondensed.className} bg-bg-base dark:bg-dark-bg-base`}>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <ThemeContextProvider>
               <ActiveSectionContextProvider>
                 <Header />
                 {children}
-
                 <Footer />
                 <Toaster
                   position="bottom-center"

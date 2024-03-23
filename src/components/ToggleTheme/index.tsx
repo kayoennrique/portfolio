@@ -8,6 +8,7 @@ import { BsMoon, BsSun } from 'react-icons/bs';
 import { useTheme } from '@/contexts/theme-context';
 
 export default function ThemeSwitch() {
+
   const { theme, toggleTheme } = useTheme();
 
   return (

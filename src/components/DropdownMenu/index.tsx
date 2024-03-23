@@ -1,4 +1,5 @@
-"use client"
+'use client';
+
 // React
 import * as React from "react";
 

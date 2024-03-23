@@ -13,7 +13,8 @@ interface IModalProps {
 }
 
 export const Modal = ({ children, isOpen }: IModalProps) => {
-  const { toggleVisibility: toggleModal } = useContext(ModalContext)
+
+  const { toggleVisibility: toggleModal } = useContext(ModalContext);
 
   return (
     <div className={`w-screen h-screen fixed z-50 top-0 left-0 ${isOpen ? 'block' : 'hidden'}`}>

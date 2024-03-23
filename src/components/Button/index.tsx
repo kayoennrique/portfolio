@@ -1,8 +1,10 @@
 // React
-import { useTranslations } from "next-intl";
 import { ReactNode } from "react";
 import React from 'react';
 import { useFormStatus } from 'react-dom';
+
+// Next.js
+import { useTranslations } from "next-intl";
 
 // Icons
 import { FaPaperPlane } from 'react-icons/fa';
