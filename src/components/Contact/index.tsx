@@ -44,7 +44,7 @@ export default function Contact() {
       <p className="text-slate-700 -mt-5 dark:text-slate-200">
         {t("description")}{" "}
         <a className="underline" href="mailto:kayo.ennrique@hotmail.com.br">
-          kayo.ennrique@hotmail.com.br
+          kayoennrique@kayoennrique.com
         </a>{" "}
         {t("description2")}
       </p>
