@@ -86,7 +86,7 @@ export const Hero = () => {
         id="home"
         className="md:flex mb-20 scroll-mt-28 leading-8 items-center justify-between"
       >
-        <div className="my-20 lg:my-0 md:w-full lg:w-2/4">
+        <div className="my-20 lg:my-0 text-yellow-500 dark:text-purple-500 md:w-full lg:w-2/4">
           {socialListItems.map((social, index) => (
             <SocialIcon
               key={index}
