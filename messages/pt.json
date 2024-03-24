@@ -59,6 +59,9 @@
     "VidFlow": {
       "description": "JavaScript, consumindo e processando dados de uma API para criar experiências web dinâmicas e interativas."
     },
+    "SecretFriend": {
+      "description": "Testando componentes no React para garantir que funcionem corretamente e sem bugs."
+    },
     "button": "Visitar Site"
   },
   "Contact": {

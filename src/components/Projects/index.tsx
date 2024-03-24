@@ -94,6 +94,13 @@ export const Projects = () => {
       technologies: ['JavaScript', 'GIT', 'API', 'NPM'],
       link: 'https://vidflow-4d9n.vercel.app/'
     },
+    {
+      name: "SecretFriend",
+      description: `${t("SecretFriend.description")}`,
+      thumb: "/secretfriend.png",
+      technologies: ['React', 'GIT', 'TypeScript'],
+      link: 'hhttps://secret-friend-drawer.vercel.app/'
+    },
   ]
 
   return (
