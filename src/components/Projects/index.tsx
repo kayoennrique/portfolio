@@ -101,6 +101,13 @@ export const Projects = () => {
       technologies: ['React', 'GIT', 'TypeScript'],
       link: 'hhttps://secret-friend-drawer.vercel.app/'
     },
+    {
+      name: "GameJS",
+      description: `${t("GameJS.description")}`,
+      thumb: "/gamejs.png",
+      technologies: ['JavaScript', 'GIT'],
+      link: 'hhttps://secret-friend-drawer.vercel.app/'
+    },
   ]
 
   return (

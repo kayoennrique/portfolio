@@ -62,6 +62,9 @@
     "SecretFriend": {
       "description": "Testando componentes no React para garantir que funcionem corretamente e sem bugs."
     },
+    "GameJS": {
+      "description": "Praticando a lógica de programação."
+    },
     "button": "Visitar Site"
   },
   "Contact": {
