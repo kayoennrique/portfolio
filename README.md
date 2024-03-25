@@ -29,7 +29,7 @@ This is the repository of my personal portfolio, where I showcase my projects an
   </a>
 </p>
 
-<!-- ![GIF of running application](zoop-gif.gif) -->
+![GIF of running application](kayoennrique-gif.gif)
 
 ## 🔨 Project features
 
