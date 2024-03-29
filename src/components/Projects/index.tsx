@@ -20,93 +20,100 @@ export const Projects = () => {
     {
       name: "AluraCases",
       description: `${t("AluraCases.description")}`,
-      thumb: "/cases.png",
+      thumb: "/alura-cases.webp",
       technologies: ['Next.js', 'GIT', 'TypeScipt'],
       link: 'https://alura-cases-theta.vercel.app/'
     },
     {
       name: "ByteBank",
       description: `${t("ByteBank.description")}`,
-      thumb: "/image.png",
+      thumb: "/bytebank.webp",
       technologies: ['TypeScipt', 'GIT'],
       link: 'https://bytebank2-p6v90fcjb-kayoennrique.vercel.app/'
     },
     {
       name: "Hello World!",
       description: `${t("HelloWorld.description")}`,
-      thumb: "/hello-world.png",
+      thumb: "/helloworld.webp",
       technologies: ['React', 'JavaScript', 'GIT',],
       link: 'https://helloworld-green-one.vercel.app/'
     },
     {
       name: "Organo",
       description: `${t("Organo.description")}`,
-      thumb: "/organo.png",
+      thumb: "/organo.webp",
       technologies: ['React', 'GIT', 'TypeScript'],
       link: 'https://organo-alpha-five.vercel.app/'
     },
     {
       name: "Studies",
       description: `${t("Studies.description")}`,
-      thumb: "/studies.png",
+      thumb: "/studies.webp",
       technologies: ['React', 'TypeScript', 'GIT', 'SASS'],
       link: 'https://studies-dun.vercel.app/'
     },
     {
       name: "AlfaBit",
       description: `${t("AlfaBit.description")}`,
-      thumb: "/alfabit.png",
+      thumb: "/alfabit.webp",
       technologies: ['Next.js', 'Tailwind', 'NPM', 'Storybook'],
       link: 'https://alfabit.vercel.app/?path=/story/design-system-molecules-notice--primary'
     },
     {
       name: "Cinetag",
       description: `${t("Cinetag.description")}`,
-      thumb: "/cinetag.png",
+      thumb: "/cinetag.webp",
       technologies: ['React', 'CSS Modules', 'GIT'],
       link: 'https://cinetag-two-omega.vercel.app/'
     },
     {
       name: "Meteora",
       description: `${t("Meteora.description")}`,
-      thumb: "/meteora.png",
+      thumb: "/meteora.webp",
       technologies: ['React', 'ContextAPI', 'GIT'],
       link: 'https://meteora-bice-rho.vercel.app/'
     },
     {
       name: "Aluroni",
       description: `${t("Aluroni.description")}`,
-      thumb: "/aluroni.png",
+      thumb: "/aluroni.webp",
       technologies: ['React', 'GIT', 'SASS', 'NPM'],
       link: 'https://aluroni-5ujg.vercel.app/'
     },
     {
       name: "ByteBooks",
       description: `${t("ByteBooks.description")}`,
-      thumb: "/bytebooks.png",
+      thumb: "/bytebooks.webp",
       technologies: ['React', 'SSR', 'GIT', 'Hooks'],
       link: 'https://alurabooks-init-1h98a27r6-kayoennrique.vercel.app/'
     },
     {
       name: "VidFlow",
       description: `${t("VidFlow.description")}`,
-      thumb: "/vidflow.png",
+      thumb: "/vidflow.webp",
       technologies: ['JavaScript', 'GIT', 'API', 'NPM'],
       link: 'https://vidflow-4d9n.vercel.app/'
     },
     {
       name: "SecretFriend",
       description: `${t("SecretFriend.description")}`,
-      thumb: "/secretfriend.png",
+      thumb: "/secretfriend.webp",
       technologies: ['React', 'GIT', 'TypeScript'],
       link: 'https://secret-friend-drawer.vercel.app/'
     },
     {
       name: "GameJS",
       description: `${t("GameJS.description")}`,
-      thumb: "/gamejs.png",
+      thumb: "/gamejs.webp",
       technologies: ['JavaScript', 'GIT'],
       link: 'https://secret-number-lemon.vercel.app/'
+    },
+    {
+      name: "CodeConnect",
+      description: `${t("CodeConnect.description")}`,
+      thumb: "/codeconnect.webp",
+      technologies: ['Next.js', 'Prisma', 'PostGres', 'GIT'],
+      link: 'https://codeconnect-33u4.vercel.app/'
     },
   ]
 

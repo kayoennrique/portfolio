@@ -65,6 +65,9 @@
     "GameJS": {
       "description": "Practicing programming logic."
     },
+    "CodeConnect": {
+      "description": "Using Next.js with Prisma and Postgres. Docker, Prisma, migrations, relationships, data manipulation, pagination, and customization."
+    },
     "button": "Visit Site"
   },
   "Contact": {
