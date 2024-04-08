@@ -34,6 +34,6 @@
   }
 
   body::-webkit-scrollbar-thumb {
-    @apply bg-dark-bg-base dark:bg-bg-base rounded-[40px];
+    @apply bg-dark-bg-base dark:bg-bg-base rounded-[10px];
   }
 }
