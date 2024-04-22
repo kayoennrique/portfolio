@@ -60,6 +60,7 @@
       "description": "JavaScript, consuming and processing data from an API to create dynamic and interactive web experiences."
     },
     "SecretFriend": {
+      "title": "Secret Friend",
       "description": "Testing components in React to ensure they work correctly and without bugs."
     },
     "GameJS": {
@@ -67,6 +68,10 @@
     },
     "CodeConnect": {
       "description": "Using Next.js with Prisma and Postgres. Docker, Prisma, migrations, relationships, data manipulation, pagination, and customization."
+    },
+    "CalmariaSpa": {
+      "title": "CalmSpa",
+      "description": "Create inclusive websites with design and development practices that meet web standards and provide accessibility for all users."
     },
     "button": "Visit Site"
   },

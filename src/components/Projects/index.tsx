@@ -95,7 +95,7 @@ export const Projects = () => {
       link: 'https://vidflow-4d9n.vercel.app/'
     },
     {
-      name: "SecretFriend",
+      name: `${t("SecretFriend.title")}`,
       description: `${t("SecretFriend.description")}`,
       thumb: "/secretfriend.webp",
       technologies: ['React', 'GIT', 'TypeScript'],
@@ -114,6 +114,13 @@ export const Projects = () => {
       thumb: "/codeconnect.webp",
       technologies: ['Next.js', 'Prisma', 'PostGres', 'GIT'],
       link: 'https://codeconnect-33u4.vercel.app/'
+    },
+    {
+      name: `${t("CalmariaSpa.title")}`,
+      description: `${t("CalmariaSpa.description")}`,
+      thumb: "/calmaria-spa.webp",
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://calmaria-spa-blush.vercel.app/'
     },
   ]
 
