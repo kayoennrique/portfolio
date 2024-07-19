@@ -127,7 +127,7 @@ export const Projects = () => {
       description: `${t("LinkInBio.description")}`,
       thumb: "/linkinbio.webp",
       technologies: ['React', 'Styled-Components', 'NPM'],
-      link: 'https://calmaria-spa-blush.vercel.app/'
+      link: 'https://linkbio-ruddy.vercel.app/'
     },
   ]
 
