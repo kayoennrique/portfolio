@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer base {
+  * {
+    transition: all ease .3s;
+  }
+
+  body {
+    color: rgb(var(--foreground-rgb));
+  }
+
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  body::-webkit-scrollbar-track {
+    @apply bg-bg-base dark:bg-dark-bg-base;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    @apply bg-dark-bg-base dark:bg-bg-base rounded-[10px];
+  }
+}

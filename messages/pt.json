@@ -1,0 +1,95 @@
+{
+  "Header": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "Home": {
+    "title": "Olá, me chamo",
+    "title2": "e sou dev!",
+    "title3": "Há 1 ano desenvolvendo sites e aplicativos",
+    "title4": "para projetos incríveis! 👊",
+    "button_projects": "PROJETOS",
+    "button_resume": "Baixar CV",
+    "title5": "Baixe meu currículo"
+  },
+  "Skills": {
+    "title": "Habilidades"
+  },
+  "About": {
+    "title": "Sobre",
+    "content": "Olá! Meu nome é Kayo Enrique, sou formado em Comunicação Social - Jornalismo e atualmente estou em transição para carreira de Desenvolvimento Web. Atualmente estudo na Alura, me especializando como Desenvolvedor Front-End. Encontrei uma enorme satisfação nas áreas de experiência do usuário, e resolução de problemas durante a programação. Esses aspectos são gratificantes para mim no campo da organização.Desfruto enormemente de conceber experiências inovadoras que têm um impacto transformador nos usuários.",
+    "content2": "Minhas habilidades principais incluem,",
+    "content3": "React, Next.js, React Native, Typescript, e Javascript. Também possuo conhecimentos consolidados em NodeJs, Jest, Cypress, Express, API's, TailwindCSS, SCSS, Bootstrap, Material UI, Sass, CSS3, e HTML5. Na busca continua em aprimorar minhas habilidades, procuro uma posição em tempo integral como Desenvolvedor Front-End Júnior de Software/Web/Apps. Nos meus momentos de lazer, gosto de jogar videogame, ver séries/filmes, treinar jiu-jitsu e malhar. Além disso, gosto de conhecer novos lugares."
+  },
+  "Projects": {
+    "title": "Projetos",
+    "AluraCases": {
+      "description": "Explorei o Framework Next.js, aprendendo sobre criação de projetos, geração de conteúdo e SEO. Pronto para aplicar esse conhecimento!"
+    },
+    "ByteBank": {
+      "description": "Sistema de gerenciamento bancário, com TypeScript para a interface amigável, Git para controle de versão."
+    },
+    "HelloWorld": {
+      "description": "Projeto em React Router com JavaScript, implementando rotas, páginas de erro 404 e rotas dinâmicas."
+    },
+    "Organo": {
+      "description": "Criado em React, adaptei Organo 2.0 com melhorias, aprendendo sobre props, closures, e estados. Refatorei e compreendi os fundamentos do React."
+    },
+    "Studies": {
+      "description": "Desenvolvi em React com TypeScript, SASS, componentes de classe e função, manipulação de props e arrays."
+    },
+    "AlfaBit": {
+      "description": "Explorei Next.js e Tailwind, abordando setup inicial, tokens de design, Atomic Design, Headless UI, Storybook e publicação de bibliotecas de componentes."
+    },
+    "Cinetag": {
+      "description": "Projeto feito para prática do uso do React."
+    },
+    "Meteora": {
+      "description": "React gerenciando o estado globalmente com ContextAPI."
+    },
+    "Aluroni": {
+      "description": "Criei um projeto React do zero usando Create React App, adotando melhores práticas de CSS, imports absolutos, SVGs com SVGR e 'classnames'."
+    },
+    "ByteBooks": {
+      "description": "React com Server Side Rendering para otimizar desempenho na aplicação. Uso de useContext, useMemo, e manipulação de estado global no carrinho."
+    },
+    "VidFlow": {
+      "description": "JavaScript, consumindo e processando dados de uma API para criar experiências web dinâmicas e interativas."
+    },
+    "SecretFriend": {
+      "title": "Amigo Oculto",
+      "description": "Testando componentes no React para garantir que funcionem corretamente e sem bugs."
+    },
+    "GameJS": {
+      "description": "Praticando a lógica de programação."
+    },
+    "CodeConnect": {
+      "description": "Utilizando Next.js com Prisma e Postgres. Docker, Prisma, migrações, relacionamentos, manipulação de dados, paginação e personalização."
+    },
+    "CalmariaSpa": {
+      "title": "CalmariaSpa",
+      "description": " Criação de um site inclusivo com práticas de design e desenvolvimento que atendam aos padrões da web e proporcionem acessibilidade para todos os usuários."
+    },
+      "LinkInBio": {
+        "title": "Link in Bio",
+        "description": "Desenvolvi um site com práticas inclusivas de design e desenvolvimento, garantindo acessibilidade para todos os usuários. Utilizando React, TypeScript e styled-components."
+      },       
+    "button": "Visitar Site"
+  },
+  "Contact": {
+    "title": "Contato",
+    "description": "Contato direto em",
+    "description2": "ou através do formulário abaixo",
+    "placeholder": "Nome completo",
+    "placeholder2": "Sua mensagem"
+  },
+  "SubmitBtn": {
+    "title": "Enviar"
+  },
+  "Footer": {
+    "content": "Desenvolvido por Kayo Ennrique. Todos os direitos reservados"
+  }
+}
