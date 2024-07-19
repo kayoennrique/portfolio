@@ -122,6 +122,13 @@ export const Projects = () => {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://calmaria-spa-blush.vercel.app/'
     },
+    {
+      name: `${t("LinkInBio.title")}`,
+      description: `${t("LinkInBio.description")}`,
+      thumb: "/linkinbio.webp",
+      technologies: ['React', 'Styled-Components', 'NPM'],
+      link: 'https://calmaria-spa-blush.vercel.app/'
+    },
   ]
 
   return (

@@ -73,6 +73,10 @@
       "title": "CalmSpa",
       "description": "Create inclusive websites with design and development practices that meet web standards and provide accessibility for all users."
     },
+      "LinkInBio": {
+        "title": "Link in Bio",
+        "description": "I developed a website with inclusive design and development practices, ensuring accessibility for all users. Using React, TypeScript, and styled-components."
+      },    
     "button": "Visit Site"
   },
   "Contact": {

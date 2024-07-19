@@ -73,6 +73,10 @@
       "title": "CalmariaSpa",
       "description": " Criação de um site inclusivo com práticas de design e desenvolvimento que atendam aos padrões da web e proporcionem acessibilidade para todos os usuários."
     },
+      "LinkInBio": {
+        "title": "Link in Bio",
+        "description": "Desenvolvi um site com práticas inclusivas de design e desenvolvimento, garantindo acessibilidade para todos os usuários. Utilizando React, TypeScript e styled-components."
+      },       
     "button": "Visitar Site"
   },
   "Contact": {
