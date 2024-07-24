@@ -132,7 +132,7 @@ export const Hero = () => {
         </div>
         <div className="my-4">
           <p className="mb-2 text-center text-slate-700 dark:text-white">Resume in english</p>
-          <Button onClick={() => window.open('resume-kayo-ennrique-english.pdf', '_blank')}><HiOutlineDocumentDownload size={28} className="mr-2" /> Download</Button>
+          <Button onClick={() => window.open('ResumeKayoEnnrique.pdf', '_blank')}><HiOutlineDocumentDownload size={28} className="mr-2" /> Download</Button>
         </div>
       </Modal>
     </Container>
